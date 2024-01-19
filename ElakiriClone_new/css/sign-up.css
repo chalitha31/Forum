@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-backdrop {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.8) saturate(0.6);
+    object-fit: cover;
+}
+
+header {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(240, 240, 75, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0px 10%;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    z-index: 3;
+}
+
+.header-logo {
+    height: 60%;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.header-logo:hover {
+    filter: drop-shadow(0px 0px 0.2px rgb(0, 19, 27)) brightness(130%);
+}
+
+.header-logo:active {
+    filter: drop-shadow(0px 0px 20px rgba(160, 225, 255, 0));
+}
+
+header a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60%;
+    transition: 250ms;
+    border-radius: 50%;
+}
+
+.logo:hover {
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 4px rgb(160, 225, 255));
+}
+
+.logo:active {
+    filter: drop-shadow(0px 0px 20px rgba(160, 225, 255, 0));
+}
+
+.sign-up-form-container {
+    z-index: 3;
+    width: 400px;
+    min-height: 400px;
+    background-color: rgba(252, 252, 252, 0.89);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.281);
+}
+
+.form-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-bottom: 30px; */
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sign-up-form-container input {
+    width: 90%;
+    height: 40px;
+    padding-left: 20px;
+    outline: none;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 0px 1px black;
+}
+
+.type-category {
+    /* display: flex; */
+    width: 45%;
+    display: flex;
+    /* flex-direction: row; */
+    /* gap: 20px; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.type-category input {
+    /* display: flex; */
+    /* gap: 200px; */
+    width: 15px;
+    height: 15px;
+    box-shadow: none;
+}
+
+.user-div,
+.seller-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.register-button {
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    transition: 250ms;
+    background-color: rgb(117, 216, 255);
+}
+
+.register-button:hover {
+    padding: 8px 30px;
+    background-color: rgb(231, 231, 231);
+    background-color: rgb(157, 227, 255);
+}
+
+.register-button:active {
+    background-color: rgb(209, 209, 209);
+}
+
+@media (max-width: 1100px) {
+    .header-logo {
+        height: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-logo {
+        height: 50%;
+        padding-right: 5px;
+    }
+}

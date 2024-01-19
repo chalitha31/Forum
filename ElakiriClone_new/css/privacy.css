@@ -1,0 +1,75 @@
+.page-privacy-body {
+    margin-top: 10vh;
+    padding: 80px 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(0px 0px);
+}
+
+.page-privacy-heading {
+    font-weight: 600;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    padding: 0px 0px 3px 0px;
+}
+
+.privacy-cont {
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+
+.privacy-cont .page-privacy-heading {
+    width: max-content;
+    color: rgb(73, 73, 73);
+    font-size: 14px;
+    padding-bottom: 0px;
+    border: none;
+}
+
+.privacy-para {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.privacy-inpt-cont {
+    margin-top: 20px;
+    padding: 25px 25px;
+    border-radius: 5px;
+    width: max-content;
+    background-color: rgba(245, 245, 245, 0.658);
+}
+
+.privacy-inpt-cont input {
+    padding: 8px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.151);
+}
+
+.verify-btn,
+.confirm-btn {
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.verify-btn {
+    background-color: rgb(99, 162, 255);
+}
+
+.confirm-btn {
+    background-color: rgb(227, 136, 255);
+}
+
+.verify-btn:hover,
+.confirm-btn:hover {
+    filter: brightness(1.2);
+}
+
+.p-para {
+    font-size: 14px;
+    color: grey;
+}

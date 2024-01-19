@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --margin: 10vh;
+    --footer-height: 8vh;
+    --side-space: 100px;
+    --color-base: #507282;
+    --color-base: #0a74a5;
+    --color-red: #ff5b5b;
+    --btn-blue: #75d8ff;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 400;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.btn:hover {
+    padding: 10px 30px;
+    filter: brightness(130%);
+}
+
+i {
+    cursor: pointer;
+}
+
+i:hover {
+    filter: brightness(130%);
+}
+
+.i-active {
+    color: var(--color-red);
+}
+
+.cu {
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.cu:hover {
+    filter: brightness(130%);
+}
+
+.red-mark {
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.red-mark:hover {
+    color: var(--color-red);
+}
+
+.red-highlight {
+    color: var(--color-red);
+}
+
+.like {
+    color:#1d8ae9;
+}
+
+.dislike {
+    color: var(--color-red);
+}
